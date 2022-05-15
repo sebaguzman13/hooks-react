@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column;
 }
 
 .App-logo {
@@ -15,13 +17,23 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(206, 71, 71);
+  background-color: rgb(52, 54, 56);
+  padding-inline: 2em;
+}
+
+.App-header button {
+  /* margin-left: 2em */
+}
+
+.App-header h1 {
+  margin: auto;
 }
 
 .App-link {
@@ -32,7 +44,34 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+nav a {
+  margin: 0.5em 1em;
+  background-color: orange;
+  text-decoration: none;
+  padding: 0.3em 2em;
+  border-radius: 0.15em;
+  transition: background-color 0.35s;
+}
+
+nav a:hover {
+  background-color: linear-gradient(#efd, #61dafb);
+}
+
+footer {
+  background-color: rgb(52, 54, 56);
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
 }
